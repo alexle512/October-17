@@ -1,0 +1,47 @@
+<html>
+ <body>
+ 
+<h1>Add to Grocery List</h1>
+ <input type="text" id="itemTextBox" placeholder="Enter Item"/>
+ <label>Store</label>
+ <select id="groceryStore">
+     <option value="Kroger">Kroger</option>
+     <option value="HEB">HEB</option>
+     <option value="Randall's">Randall's</option>
+ </select>
+  <button type="button" id="submitButton" class="submit">Submit Item</button>
+
+<h2>Grocery List</h2>
+<ul id="groceryList">
+</ul>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-database.js"></script>
+
+
+
+
+
+
+
+ 
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"> </script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAg4M8A8s1MQ0j7xzwCj15lbzANZa3kOLQ",
+    authDomain: "grocery-84193.firebaseapp.com",
+    databaseURL: "https://grocery-84193.firebaseio.com",
+    projectId: "grocery-84193",
+    storageBucket: "grocery-84193.appspot.com",
+    messagingSenderId: "643861631410"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src ="wednesday.js"></script>
+</body>
+</html>
